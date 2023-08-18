@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0; 
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.container{
+    border: 2px solid ;
+    border: 2px solid ;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #544a7d;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #ffd452, #544a7d);  
+background: linear-gradient(to right, #ffd452, #544a7d);
+
+}
+
+#textarea{
+    width: 600px;
+    height: 250px;
+    font-size: 16px;
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    background-color: #FED373;
+}
+
+.row{
+display: flex;
+align-items: center;
+gap: 20px;
+
+}
+
+button{
+    background-color: #544a7d;
+    cursor: pointer;
+    padding: 10px 30px;
+    border-radius: 30px;
+    border: 2px solid;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+button img{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+select{
+    flex: 1;
+    height: 50px;
+    width: 300px;
+    cursor: pointer;
+    border-radius: 30px;
+    /* appearance: none; */
+    padding: 0 20px;
+    
+    background-color: #FED373;
+}
+
+@media only screen and (max-width: 645px) and (min-width: 300px) {
+
+    .container{
+        text-align: center;
+        padding: 10px;
+    }
+    #textarea{
+        width: auto;
+    }
+    .row{
+        flex-direction: column;
+    }
+    select{
+        width: 260px;
+        padding: 10px 20px;
+    }
+    button{
+        padding: 10px 30px;
+    }
+    #Pause_btn{
+        padding: 10px 25px;
+    }
+}
